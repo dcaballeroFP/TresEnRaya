@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="ap1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane layoutY="27.0" prefHeight="292.0" prefWidth="329.0">
+         <children>
+            <Button fx:id="btn8" layoutX="108.0" layoutY="192.0" mnemonicParsing="false" onAction="#clickTirada" prefHeight="96.0" prefWidth="108.0" />
+            <Button fx:id="btn3" layoutX="216.0" mnemonicParsing="false" onAction="#clickTirada" prefHeight="96.0" prefWidth="108.0" />
+            <Button fx:id="btn7" layoutY="192.0" mnemonicParsing="false" onAction="#clickTirada" prefHeight="96.0" prefWidth="108.0" />
+            <Button fx:id="btn4" layoutY="96.0" mnemonicParsing="false" onAction="#clickTirada" prefHeight="96.0" prefWidth="108.0" />
+            <Button fx:id="btn5" layoutX="108.0" layoutY="96.0" mnemonicParsing="false" onAction="#clickTirada" prefHeight="96.0" prefWidth="108.0" />
+            <Button fx:id="btn9" layoutX="216.0" layoutY="192.0" mnemonicParsing="false" onAction="#clickTirada" prefHeight="96.0" prefWidth="108.0" />
+            <Button fx:id="btn2" layoutX="108.0" mnemonicParsing="false" onAction="#clickTirada" prefHeight="96.0" prefWidth="108.0" />
+            <Button fx:id="btn1" mnemonicParsing="false" onAction="#clickTirada" prefHeight="96.0" prefWidth="108.0" />
+            <Button fx:id="btn6" layoutX="216.0" layoutY="96.0" mnemonicParsing="false" onAction="#clickTirada" prefHeight="96.0" prefWidth="108.0" />
+         </children>
+      </Pane>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Pane layoutX="323.0" layoutY="27.0" prefHeight="286.0" prefWidth="275.0">
+         <children>
+            <RadioButton fx:id="rbHH" layoutX="51.0" layoutY="79.0" mnemonicParsing="false" onAction="#HumanVSHuman" selected="true" text="Human VS Human">
+               <toggleGroup>
+                  <ToggleGroup fx:id="radio" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rbCH" layoutX="51.0" layoutY="126.0" mnemonicParsing="false"  text="CPU VS Human" toggleGroup="$radio" />
+            <RadioButton fx:id="rbCC" layoutX="51.0" layoutY="174.0" mnemonicParsing="false" onAction="#cpuVScpu" text="CPU VS CPU" toggleGroup="$radio" />
+         </children>
+      </Pane>
+      <Button fx:id="btnStart" layoutY="313.0" mnemonicParsing="false" onAction="#restart" prefHeight="86.0" prefWidth="600.0" text="RESTART" />
+   </children>
+</AnchorPane>
